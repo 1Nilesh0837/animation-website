@@ -1,36 +1,131 @@
-# Godrej No.1 Soap Scrollytelling Experience
+# Nilesh's Premium Portfolio
 
-A premium, interactive single-page website for Godrej No.1 soap, built with Next.js, Framer Motion, and Tailwind CSS. The experience features smooth scroll-based animations (scrollytelling) and dynamic product variant showcases.
+A sophisticated, high-performance professional portfolio showcasing expertise in Machine Learning, React development, and creative UI/UX design through immersive scrollytelling and cutting-edge web technologies.
 
-![Godrej No.1 Rose Soap](public/Soapimage-product/Rose-soap/Whisk_3b03608c607db7e980a4e86b28538009dr.png)
+## 🎨 Features
 
-## Features
-- **Scrollytelling Experience:** High-end interactive scroll-based image sequence and storytelling.
-- **Dynamic Product Showcases:** Seamlessly switch between soap variants (Rose & Aloe, Tulsi & Neem, Saffron & Milk) with updated brand colors, product images, and features.
-- **Fully Responsive:** Optimized layout constraints for an exceptional mobile, tablet, and desktop experience.
-- **Static Export Ready:** Configuration fully supports Next.js static build (`output: 'export'`) for lightweight standalone hosting.
+### Core Sections
+- **Custom Cursor**: Smooth, blend-mode aware cursor with halo effect and contextual labels
+- **Hero Section**: Letter-by-letter scramble text reveal with infinite keyword marquee and magnetic CTA button
+- **Kinetic 3D Scene**: Vanilla Three.js WebGL with rotating cylinders, particle field, and mouse-responsive tilting
+- **Video Section**: Smart autoplay with chapter markers and interactive video scrubber
+- **Kingdom Section**: Dramatic door-opening scroll animation with particle burst and SVG doodle reveals
+- **About Section**: Draggable card stack with haptic feedback and skill progress bars
+- **Project Section**: Sticky scroll stacking with video thumbnail hover and 3D perspective rotation
+- **Contact Section**: EmailJS integration, ShaderGradient background, 3D social card flip effect
+- **Control Panel**: Live FPS counter, speed control, theme picker, and keyboard shortcuts (Cmd/Ctrl + K)
 
-## Tech Stack
-- [Next.js](https://nextjs.org/) (App Router)
-- [React](https://react.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
+## 🛠️ Tech Stack
 
-## Getting Started
+- **Frontend**: React 18, TypeScript, Vite 5
+- **Styling**: Tailwind CSS 4, CSS Modules
+- **Animations**: Framer Motion, GSAP with ScrollTrigger
+- **3D Graphics**: Three.js, React Three Fiber
+- **UI Components**: Radix UI, Lucide Icons
+- **Forms**: EmailJS for email submissions
+- **Additional**: Shader Gradient, Embla Carousel
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+## 📦 Installation
 
-2. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
+```bash
+npm install
+```
 
-3. **Build and Serve Static Site:**
-   ```bash
-   npm run build
-   npx serve@latest out
-   ```
+## 🚀 Development
+
+```bash
+npm run dev
+```
+
+Visit `http://localhost:5173` to view the portfolio.
+
+## 🏗️ Build
+
+```bash
+npm run build
+```
+
+Production-ready files will be in the `dist` directory.
+
+## 📋 Project Structure
+
+```
+src/
+├── app/
+│   ├── App.tsx
+│   ├── components/
+│   │   ├── CustomCursor.tsx
+│   │   ├── ControlPanel.tsx
+│   │   ├── sections/
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── VideoSection.tsx
+│   │   │   ├── KingdomSection.tsx
+│   │   │   ├── AboutSection.tsx
+│   │   │   ├── ProjectSection.tsx
+│   │   │   └── ContactSection.tsx
+│   │   └── webgl/
+│   │       └── KineticScene.tsx
+│   ├── context/
+│   │   └── TextureContext.tsx
+│   ├── hooks/
+│   │   ├── useMousePosition.ts
+│   │   └── useScrollPosition.ts
+│   └── styles/
+│       └── globals.css
+├── main.tsx
+index.html
+vite.config.ts
+tsconfig.json
+```
+
+## 🎯 Key Customizations
+
+### Adding Your Information
+
+1. **Update Hero Section**: Modify text in `HeroSection.tsx`
+2. **Update Project Data**: Edit `PROJECTS` array in `ProjectSection.tsx`
+3. **Update Social Links**: Modify `SOCIAL_LINKS` in `ContactSection.tsx`
+4. **EmailJS Integration**: Replace form ID in `ContactSection.tsx`
+
+### Customizing Colors & Themes
+
+- Modify Tailwind classes for color changes
+- Update theme colors in `ControlPanel.tsx`
+- Adjust gradients in component `className` attributes
+
+## 📱 Responsive Design
+
+The portfolio is fully responsive and optimized for:
+- Desktop (1920px+)
+- Tablet (768px - 1024px)
+- Mobile (320px - 767px)
+
+## ⚡ Performance
+
+- Code splitting with dynamic imports
+- Optimized 3D rendering with frustum culling
+- Lazy loading for images and videos
+- GPU-accelerated animations
+- FPS monitoring in Control Panel
+
+## 🔐 Security
+
+- No sensitive data in client-side code
+- EmailJS handles form submissions securely
+- CORS-safe image loading
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Feel free to fork and submit pull requests for improvements!
+
+## 📧 Contact
+
+For inquiries, reach out through the contact form or social links in the portfolio.
+
+---
+
+**Made with ❤️ by Nilesh**
